@@ -227,6 +227,8 @@ public class QuestionBankController {
 
     /**
      * listQuestionBankVOByPage 流控操作
+     * 限流：提示“系统压力过大，请耐心等待”
+     * 熔断：执行降级操作
      * @param questionBankQueryRequest
      * @param request
      * @param ex

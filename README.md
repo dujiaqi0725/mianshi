@@ -106,6 +106,24 @@ String upperDataKey = "UserComment";
 
 生成代码后，可以移动到实际项目中，并且按照 `// todo` 注释的提示来针对自己的业务需求进行修改。
 
+### 启动中间件
+
+##### ElasticSearch
+
+.\bin\elasticsearch.bat
+
+##### etcd
+
+etcd
+
+##### Sentinel
+
+java -Dserver.port=8131 -Dcsp.sentinel.dashboard.server=localhost:8131 -Dproject.name=sentinel-dashboard -jar sentinel-dashboard-1.8.6.jar
+
+##### Nacos
+
+startup.cmd -m standalone
+
 # mianshi-frontend
 
 ~~~xml
